@@ -2,8 +2,8 @@ from django.shortcuts import render
 from django.shortcuts import redirect
 
 # Create your views here.
-def post_list(request):
-    return render(request, 'blog/ingresar_variables.html', {})
+def plantilla_list(request):
+    return render(request, 'blog/plantilla_list.html', {})
 
 def post_detail(request):
     if request.method == 'POST':
