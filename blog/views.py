@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.shortcuts import redirect
 
+
 # Create your views here.
 def ingresar_variables(request):
     return render(request, 'blog/ingresar_variables.html', {})
