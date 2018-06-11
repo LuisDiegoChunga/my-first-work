@@ -6,13 +6,13 @@ from django.shortcuts import redirect
 def ingresar_variables(request):
     return render(request, 'blog/ingresar_variables.html', {})
 
-def post_detail(request):
+def resultado(request):
     if request.method == 'POST':
         form = PostForm(request.POST)
         if form.is_valid():
             post = form.save(commit=False)
             post.save()
-            return redirect('post_detail', pk=post.pk)
+            return redirect('resultado', pk=resultado.pk)
     else:
         form = PostForm()
     return render(request, 'blog/resultado.html', {'form': form})
