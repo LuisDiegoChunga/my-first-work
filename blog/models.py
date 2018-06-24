@@ -3,7 +3,7 @@ from django.utils import timezone
 
 # Create your models here.
 class Ingresar_variables(models.Model):
-    numero_bolsas = models.IntegerField()
+    bolsas = models.IntegerField()
     sexo = models.IntegerField()
     edad = models.IntegerField()
     peso = models.IntegerField()

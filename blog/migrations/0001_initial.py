@@ -14,7 +14,7 @@ class Migration(migrations.Migration):
             name='Post',
             fields=[
                 ('id', models.AutoField(serialize=False, primary_key=True, verbose_name='ID', auto_created=True)),
-                ('numero_bolsas', models.IntegerField()),
+                ('bolsas', models.IntegerField()),
                 ('sexo', models.IntegerField()),
                 ('edad', models.IntegerField()),
                 ('peso', models.IntegerField()),
